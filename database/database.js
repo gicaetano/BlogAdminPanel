@@ -1,6 +1,8 @@
 const Sequelize = require("sequelize");
 
-const connection = new Sequelize('mysql://b9021139c3c4e5:e060654d@us-cdbr-east-05.cleardb.net/heroku_922d1255a8f9e11');
+const connection = new Sequelize('mysql://b9021139c3c4e5:e060654d@us-cdbr-east-05.cleardb.net/heroku_922d1255a8f9e11',{
+    timezone: "-03:00"
+});
 
 module.exports = connection;
 
